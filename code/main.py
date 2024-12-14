@@ -1,5 +1,6 @@
 from player import *
 from injury import *
+from week import *
 
 def loadWRData():
     pass
@@ -54,7 +55,17 @@ mahomes_injury_history = pm.get_injury_history()
 print("Mahomes injury history: ")
 for injury in mahomes_injury_history:
     print("{0}".format(injury.get_description()))
-
+    
+    
+# Add game information
+wk1 = Week()
+wk1.home = "Chiefs"
+wk1.opponent = "Baltimore"
+wk1.yards = 291
+wk1.TDs = 1
+wk1.INTs = 1
+wk1.F = 0
+wk1.FPTS = 14.14
 
 # Did this player overachieve or underachieve based on where he was drafted?
 
