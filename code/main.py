@@ -30,6 +30,8 @@ inj1.set_description("Patrick Mahomes sprained his ankle in the playoffs")
 inj1.set_year(2022) # Verify
 inj1.set_severity("Major")
 
+pm.add_injury_to_history(inj1)
+
 # Add Aaron Rodgers
 ar = Player()
 ar.set_name("Aaron Rodgers")
@@ -41,9 +43,28 @@ inj2.set_year(2023)
 inj2.set_severity("Major")
 ar.add_injury_to_history(inj1)
 
-print(ar.get_name())
+#print(ar.get_name())
 
 
 compare2Players(pm,ar)
 
+# Unit Testing:
+# Test 1: Print injury history of Patrick Mahomes
+mahomes_injury_history = pm.get_injury_history()
+print("Mahomes injury history: ")
+for injury in mahomes_injury_history:
+    print("{0}".format(injury.get_description()))
+
+
 # Did this player overachieve or underachieve based on where he was drafted?
+
+# WHat percentage of the time does San frnacisco run the ball?
+# WHat percentage of these touches will go to X player?
+# WHat percentage of these yards will go to X player
+
+# Average 200 yards rushing
+# McCaffrey gets 50% of the touches, 50% of the yards
+# 20% more if playing Panthers. How many yards does the Panthers defense give up?
+
+# Stephon Diggs had an injury
+
