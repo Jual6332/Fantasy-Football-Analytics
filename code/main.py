@@ -67,6 +67,15 @@ wk1.INTs = 1
 wk1.F = 0
 wk1.FPTS = 14.14
 
+wk2 = Week()
+wk2.home = "Chiefs"
+wk2.opponent = "Cincinnati"
+wk2.yards = 151
+wk2.TDs = 2
+wk2.INTs = 2
+wk2.F = 0
+wk2.FPTS = 12.94
+
 # Did this player overachieve or underachieve based on where he was drafted?
 
 # WHat percentage of the time does San frnacisco run the ball?
