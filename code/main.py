@@ -146,11 +146,43 @@ wk9.F = 0
 wk9.FPTS = 24.54
 wk9.notes = ""
 
+wk10 = Week()
+wk10.home = "Kansas City"
+wk10.opponent = "Denver"
+wk10.yards = 266
+wk10.TDs = 1
+wk10.INTs = 0
+wk10.F = 0
+wk10.FPTS = 16.54
+wk10.notes = ""
+
+wk11 = Week()
+wk11.home = "Buffalo"
+wk11.opponent = "Kansas City"
+wk11.yards = 196
+wk11.TDs = 3
+wk11.INTs = 2
+wk11.F = 0
+wk11.FPTS = 15.84
+wk11.notes = ""
+
+wk12 = Week()
+wk12.home = "Carolina"
+wk12.opponent = "Kansas City"
+wk12.yards = 269
+wk12.TDs = 3
+wk12.INTs = 0
+wk12.F = 0
+wk12.FPTS = 28.76
+wk12.notes = ""
+
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
 # How does Mahomes fair on the road?
 # mahomes has not had an interception in 5 straight weeks (as of Week 16), function to "notice" this
 # Who had the best week1 performance on my team among wrs? among rbs? of my qbs?
 # How to determine if player started a certain week? For flex and waiver wire guys
+
+# make sure to include head-head matchups when comparing players
 
 # Did this player overachieve or underachieve based on where he was drafted?
 
