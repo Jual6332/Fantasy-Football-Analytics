@@ -76,6 +76,38 @@ wk2.INTs = 2
 wk2.F = 0
 wk2.FPTS = 12.94
 
+wk3 = Week()
+wk3.home = "Atlanta"
+wk3.opponent = "Chiefs"
+wk3.yards = 217
+wk3.TDs = 2
+wk3.INTs = 1
+wk3.F = 0
+wk3.FPTS = 16.38
+
+wk4 = Week()
+wk4.home = "Los Angeles"
+wk4.opponent = "Chiefs"
+wk4.yards = 245
+wk4.TDs = 1
+wk4.INTs = 1
+wk4.F = 0
+wk4.FPTS = 13.00
+
+wk5 = Week()
+wk5.home = "Chiefs"
+wk5.opponent = "New Orleans"
+wk5.yards = 331
+wk5.TDs = 0
+wk5.INTs = 1
+wk5.F = 0
+wk5.FPTS = 13.44
+
+# Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
+# How does Mahomes fair on the road?
+# mahomes has not had an interception in 5 straight weeks (as of Week 16), function to "notice" this
+# Who had the best week1 performance on my team among wrs? among rbs? of my qbs?
+
 # Did this player overachieve or underachieve based on where he was drafted?
 
 # WHat percentage of the time does San frnacisco run the ball?
