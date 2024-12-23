@@ -46,7 +46,7 @@ ar.add_injury_to_history(inj1)
 
 #print(ar.get_name())
 
-
+# Compare 2 players based on a number of factors: age, best yearly fantasy performance (maybe include mvps, superbowl rings, )
 compare2Players(pm,ar)
 
 # Unit Testing:
@@ -59,7 +59,7 @@ for injury in mahomes_injury_history:
     
 # Add game information
 wk1 = Week()
-wk1.home = "Chiefs"
+wk1.home = "Kansas City"
 wk1.opponent = "Baltimore"
 wk1.yards = 291
 wk1.TDs = 1
@@ -67,8 +67,11 @@ wk1.INTs = 1
 wk1.F = 0
 wk1.FPTS = 14.14
 
+print("Wk1.home: {0}".format(wk1.home))
+#print("Wk1.__home: {0}".format(wk1.__home))
+
 wk2 = Week()
-wk2.home = "Chiefs"
+wk2.home = "Kansas City"
 wk2.opponent = "Cincinnati"
 wk2.yards = 151
 wk2.TDs = 2
@@ -78,7 +81,7 @@ wk2.FPTS = 12.94
 
 wk3 = Week()
 wk3.home = "Atlanta"
-wk3.opponent = "Chiefs"
+wk3.opponent = "Kansas City"
 wk3.yards = 217
 wk3.TDs = 2
 wk3.INTs = 1
@@ -87,7 +90,7 @@ wk3.FPTS = 16.38
 
 wk4 = Week()
 wk4.home = "Los Angeles"
-wk4.opponent = "Chiefs"
+wk4.opponent = "Kansas City"
 wk4.yards = 245
 wk4.TDs = 1
 wk4.INTs = 1
@@ -95,7 +98,7 @@ wk4.F = 0
 wk4.FPTS = 13.00
 
 wk5 = Week()
-wk5.home = "Chiefs"
+wk5.set_home("Kansas City")
 wk5.opponent = "New Orleans"
 wk5.yards = 331
 wk5.TDs = 0
@@ -103,10 +106,51 @@ wk5.INTs = 1
 wk5.F = 0
 wk5.FPTS = 13.44
 
+wk6 = Week()
+wk6.home = ""
+wk6.opponent = ""
+wk6.yards = 0
+wk6.TDs = 0
+wk6.INTs = 0
+wk6.F = 0
+wk6.FPTS = 0
+wk6.notes = "Bye week for Mahomes"
+
+wk7 = Week()
+wk7.home = "San Francisco"
+wk7.opponent = "Kansas City"
+wk7.yards = 154
+wk7.TDs = 0
+wk7.INTs = 2
+wk7.F = 0
+wk7.FPTS = 12.06
+wk7.notes = ""
+
+wk8 = Week()
+wk8.home = "Las Vegas"
+wk8.opponent = "Kansas City"
+wk8.yards = 262
+wk8.TDs = 2
+wk8.INTs = 1
+wk8.F = 0
+wk8.FPTS = 18.18
+wk8.notes = ""
+
+wk9 = Week()
+wk9.home = "Kansas City"
+wk9.opponent = "Tampa Bay"
+wk9.yards = 291
+wk9.TDs = 3
+wk9.INTs = 0
+wk9.F = 0
+wk9.FPTS = 24.54
+wk9.notes = ""
+
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
 # How does Mahomes fair on the road?
 # mahomes has not had an interception in 5 straight weeks (as of Week 16), function to "notice" this
 # Who had the best week1 performance on my team among wrs? among rbs? of my qbs?
+# How to determine if player started a certain week? For flex and waiver wire guys
 
 # Did this player overachieve or underachieve based on where he was drafted?
 
