@@ -57,6 +57,9 @@ for injury in mahomes_injury_history:
     print("{0}".format(injury.get_description()))
     
     
+# Mahomes data
+mahomes_2024_weeks = []
+    
 # Add game information
 wk1 = Week()
 wk1.home = "Kansas City"
@@ -67,7 +70,9 @@ wk1.INTs = 1
 wk1.F = 0
 wk1.FPTS = 14.14
 
-print("Wk1.home: {0}".format(wk1.home))
+mahomes_2024_weeks.append(wk1)
+
+#print("Wk1.home: {0}".format(wk1.home))
 #print("Wk1.__home: {0}".format(wk1.__home))
 
 wk2 = Week()
@@ -79,6 +84,8 @@ wk2.INTs = 2
 wk2.F = 0
 wk2.FPTS = 12.94
 
+mahomes_2024_weeks.append(wk2)
+
 wk3 = Week()
 wk3.home = "Atlanta"
 wk3.opponent = "Kansas City"
@@ -87,6 +94,8 @@ wk3.TDs = 2
 wk3.INTs = 1
 wk3.F = 0
 wk3.FPTS = 16.38
+
+mahomes_2024_weeks.append(wk3)
 
 wk4 = Week()
 wk4.home = "Los Angeles"
@@ -97,6 +106,8 @@ wk4.INTs = 1
 wk4.F = 0
 wk4.FPTS = 13.00
 
+mahomes_2024_weeks.append(wk4)
+
 wk5 = Week()
 wk5.set_home("Kansas City")
 wk5.opponent = "New Orleans"
@@ -106,6 +117,8 @@ wk5.INTs = 1
 wk5.F = 0
 wk5.FPTS = 13.44
 
+mahomes_2024_weeks.append(wk5)
+
 wk6 = Week()
 wk6.home = ""
 wk6.opponent = ""
@@ -114,7 +127,9 @@ wk6.TDs = 0
 wk6.INTs = 0
 wk6.F = 0
 wk6.FPTS = 0
-wk6.notes = "Bye week for Mahomes"
+wk6.notes = "Bye week"
+
+mahomes_2024_weeks.append(wk6)
 
 wk7 = Week()
 wk7.home = "San Francisco"
@@ -126,6 +141,8 @@ wk7.F = 0
 wk7.FPTS = 12.06
 wk7.notes = ""
 
+mahomes_2024_weeks.append(wk7)
+
 wk8 = Week()
 wk8.home = "Las Vegas"
 wk8.opponent = "Kansas City"
@@ -135,6 +152,8 @@ wk8.INTs = 1
 wk8.F = 0
 wk8.FPTS = 18.18
 wk8.notes = ""
+
+mahomes_2024_weeks.append(wk8)
 
 wk9 = Week()
 wk9.home = "Kansas City"
@@ -146,6 +165,8 @@ wk9.F = 0
 wk9.FPTS = 24.54
 wk9.notes = ""
 
+mahomes_2024_weeks.append(wk9)
+
 wk10 = Week()
 wk10.home = "Kansas City"
 wk10.opponent = "Denver"
@@ -155,6 +176,8 @@ wk10.INTs = 0
 wk10.F = 0
 wk10.FPTS = 16.54
 wk10.notes = ""
+
+mahomes_2024_weeks.append(wk10)
 
 wk11 = Week()
 wk11.home = "Buffalo"
@@ -166,6 +189,8 @@ wk11.F = 0
 wk11.FPTS = 15.84
 wk11.notes = ""
 
+mahomes_2024_weeks.append(wk11)
+
 wk12 = Week()
 wk12.home = "Carolina"
 wk12.opponent = "Kansas City"
@@ -175,6 +200,8 @@ wk12.INTs = 0
 wk12.F = 0
 wk12.FPTS = 28.76
 wk12.notes = ""
+
+mahomes_2024_weeks.append(wk12)
 
 wk13 = Week()
 wk13.home = "Kansas City"
@@ -186,6 +213,8 @@ wk13.F = 0
 wk13.FPTS = 16.64
 wk13.notes = ""
 
+mahomes_2024_weeks.append(wk13)
+
 wk14 = Week()
 wk14.home = "Kansas City"
 wk14.opponent = "Los Angeles"
@@ -195,6 +224,8 @@ wk14.INTs = 0
 wk14.F = 0
 wk14.FPTS = 14.1
 wk14.notes = ""
+
+mahomes_2024_weeks.append(wk14)
 
 wk15 = Week()
 wk15.home = "Cleveland"
@@ -206,6 +237,8 @@ wk15.F = 0
 wk15.FPTS = 15.76
 wk15.notes = ""
 
+mahomes_2024_weeks.append(wk15)
+
 wk16 = Week()
 wk16.home = "Kansas City"
 wk16.opponent = "Houston"
@@ -216,6 +249,8 @@ wk16.F = 0
 wk16.FPTS = 23.7
 wk16.notes = ""
 
+mahomes_2024_weeks.append(wk16)
+
 wk17 = Week()
 wk17.home = "Pittsburgh"
 wk17.opponent = "Kansas City"
@@ -224,7 +259,9 @@ wk17.TDs = 0
 wk17.INTs = 0
 wk17.F = 0
 wk17.FPTS = 0
-wk17.notes = ""
+wk17.notes = "not yet played"
+
+mahomes_2024_weeks.append(wk17)
 
 wk18 = Week()
 wk18.home = "Denver"
@@ -234,7 +271,28 @@ wk18.TDs = 0
 wk18.INTs = 0
 wk18.F = 0
 wk18.FPTS = 0
-wk18.notes = ""
+wk18.notes = "not yet played"
+
+mahomes_2024_weeks.append(wk18)
+
+# Calculate which week was Mahomes' best
+maximum=0
+for item in mahomes_2024_weeks:
+    if maximum <= item.FPTS:
+        maximum = item.FPTS
+print("Mahomes_2024_weeks maximum: {0}".format(maximum))
+
+# Calculate average of Mahomes' weeks
+sumz=0
+count=0
+for item in mahomes_2024_weeks:
+    if (item.notes!="Bye week" and item.notes!="not yet played"):
+        sumz+=item.FPTS
+        count+=1
+calculation = sumz/count
+average = round(calculation,1)
+print("Mahomes_2024_weeks average: {0}".format(average))
+
 
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
 # How does Mahomes fair on the road? Road win percentage in his career
