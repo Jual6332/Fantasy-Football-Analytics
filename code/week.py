@@ -8,6 +8,7 @@ class Week():
         self.F = 0
         self.FPTS = 0
         self.notes = ""
+        self.winner = ""
     def get_home(self):
         return self.home
     def get_opponent(self):
@@ -24,8 +25,10 @@ class Week():
         return self.FPTS
     def get_notes(self):
         return self.notes
+    def get_winner(self):
+        return self.winner
     def set_home(self,hm):
-        self.home = hm
+        self.__home = hm
     def set_opponent(self,opp):
         self.opponent = opp
     def set_yards(self,yds):
@@ -40,4 +43,6 @@ class Week():
         self.FPTS = fpts
     def set_notes(self,nts):
         self.notes = nts
+    def set_winner(self,wn):
+        self.winner = wn
     
