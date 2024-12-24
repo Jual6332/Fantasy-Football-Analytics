@@ -206,6 +206,36 @@ wk15.F = 0
 wk15.FPTS = 15.76
 wk15.notes = ""
 
+wk16 = Week()
+wk16.home = "Kansas City"
+wk16.opponent = "Houston"
+wk16.yards = 260
+wk16.TDs = 1
+wk16.INTs = 0
+wk16.F = 0
+wk16.FPTS = 23.7
+wk16.notes = ""
+
+wk17 = Week()
+wk17.home = "Pittsburgh"
+wk17.opponent = "Kansas City"
+wk17.yards = 0
+wk17.TDs = 0
+wk17.INTs = 0
+wk17.F = 0
+wk17.FPTS = 0
+wk17.notes = ""
+
+wk18 = Week()
+wk18.home = "Denver"
+wk18.opponent = "Kansas City"
+wk18.yards = 0
+wk18.TDs = 0
+wk18.INTs = 0
+wk18.F = 0
+wk18.FPTS = 0
+wk18.notes = ""
+
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
 # How does Mahomes fair on the road? Road win percentage in his career
 # mahomes has not had an interception in 5 straight weeks (as of Week 16), function to "notice" this
