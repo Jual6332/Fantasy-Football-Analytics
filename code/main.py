@@ -293,6 +293,31 @@ calculation = sumz/count
 average = round(calculation,1)
 print("Mahomes_2024_weeks average: {0}".format(average))
 
+# Calculate home record for Mahomes
+
+# Calculate home points average
+sumz_home=0
+count_home=0
+sumz_away=0
+count_away=0
+for item in mahomes_2024_weeks:
+    if (item.home=="Kansas City" and item.notes!="Bye week" and item.notes!="not yet played"):
+        sumz_home+=item.FPTS
+        count_home+=1
+    elif (item.opponent=="Kansas City" and item.notes!="Bye week" and item.notes!="not yet played"):
+        sumz_away+=item.FPTS
+        count_away+=1
+calculation_home = sumz_home/count_home
+average_home = round(calculation_home,1)
+print("Mahomes_2024_weeks home average: {0}".format(average_home))
+
+calculation_away = sumz_away/count_away
+average_away = round(calculation_away,1)
+print("Mahomes_2024_weeks away average: {0}".format(average_away))
+#print(sumz_away)
+#print(sumz)
+#print(count_away)
+#print(count)
 
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
 # How does Mahomes fair on the road? Road win percentage in his career
