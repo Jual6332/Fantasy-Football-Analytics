@@ -176,15 +176,45 @@ wk12.F = 0
 wk12.FPTS = 28.76
 wk12.notes = ""
 
+wk13 = Week()
+wk13.home = "Kansas City"
+wk13.opponent = "Las Vegas"
+wk13.yards = 306
+wk13.TDs = 1
+wk13.INTs = 0
+wk13.F = 0
+wk13.FPTS = 16.64
+wk13.notes = ""
+
+wk14 = Week()
+wk14.home = "Kansas City"
+wk14.opponent = "Los Angeles"
+wk14.yards = 210
+wk14.TDs = 1
+wk14.INTs = 0
+wk14.F = 0
+wk14.FPTS = 14.1
+wk14.notes = ""
+
+wk15 = Week()
+wk15.home = "Cleveland"
+wk15.opponent = "Kansas City"
+wk15.yards = 159
+wk15.TDs = 2
+wk15.INTs = 0
+wk15.F = 0
+wk15.FPTS = 15.76
+wk15.notes = ""
+
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that
-# How does Mahomes fair on the road?
+# How does Mahomes fair on the road? Road win percentage in his career
 # mahomes has not had an interception in 5 straight weeks (as of Week 16), function to "notice" this
 # Who had the best week1 performance on my team among wrs? among rbs? of my qbs?
 # How to determine if player started a certain week? For flex and waiver wire guys
 
-# make sure to include head-head matchups when comparing players
+# make sure to include head-head matchups when comparing players (most notably quarterbacks)
 
-# Did this player overachieve or underachieve based on where he was drafted?
+# Did this player overachieve or underachieve based on where he was drafted in the fantasy draft?
 
 # WHat percentage of the time does San frnacisco run the ball?
 # WHat percentage of these touches will go to X player?
