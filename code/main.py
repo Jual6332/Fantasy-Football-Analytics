@@ -320,7 +320,6 @@ print("Mahomes_2024_weeks away average: {0}".format(average_away))
 #print(count_away)
 #print(count)
 
-
 # Setup Team objects and their Rankings
 pit = Team()
 pit.name = "Steelers"
@@ -329,7 +328,7 @@ pit.rankings_against_qbs = 4 # The higher the rank, the better
 pit.rankings_against_wrs = 8
 pit.offense = 14
 
-print("Piitsburgh offense ranking: {0}".format(pit.offense))
+print("Pittsburgh offense ranking: {0}".format(pit.offense))
 
 # Was week1 a home game for Mahomes? Looks like it. But we need a function to determine that - Completed 12/23/24
 # How does Mahomes fair on the road? Road win percentage in his career 12/23/24
